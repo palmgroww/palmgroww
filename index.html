@@ -49,6 +49,11 @@
             padding-bottom: 1rem;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
+
+        .hero-soft-blur {
+            background-color: rgba(0, 0, 0, 0.02);
+            backdrop-filter: blur(2px);
+        }
     </style>
 </head>
 <body>
@@ -88,8 +93,8 @@
     <!-- Hero Section -->
     <section id="hero" class="relative h-screen w-full flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 w-full h-full">
-            <div class="absolute inset-0 bg-white/20 z-10"></div>
             <img src="https://images.pexels.com/photos/1068989/pexels-photo-1068989.jpeg" alt="Palm Tree" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-soft-blur"></div>
         </div>
 
         <div class="relative z-20 text-center px-4">
@@ -104,6 +109,10 @@
         <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center">
             <div class="w-[1px] h-12 bg-gradient-to-b from-[#2D5A4C] to-transparent animate-pulse"></div>
         </div>
+
+        <a href="https://shorturl.at/9ajBd" target="_blank" rel="noopener noreferrer" class="absolute bottom-8 right-6 md:right-12 z-20 px-8 py-4 bg-[#1A332B] text-white text-[11px] uppercase tracking-[0.35em] font-bold border border-white/20 rounded-full shadow-lg hover:bg-[#2D5A4C] hover:border-white/40 hover:shadow-xl transition-all duration-300">
+            Join as Creator
+        </a>
     </section>
 
     <!-- About Section -->
@@ -139,17 +148,17 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
                 <div class="reveal group">
                     <div class="aspect-[3/4] overflow-hidden bg-gray-200 mb-8 rounded-sm">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" alt="Mohit" class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
+                        <img src="Images/mohit01.png" alt="Mohit" class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
                     </div>
-                    <h4 class="text-2xl font-bold text-[#1A332B]">Mohit</h4>
+                    <h4 class="text-2xl font-bold text-[#1A332B]">Mohit Singh</h4>
                     <p class="mt-4 text-[#1A332B]/60 font-light leading-relaxed italic">"We build the environment where creativity and commerce thrive together."</p>
                 </div>
 
                 <div class="reveal group md:mt-32" style="transition-delay: 200ms;">
                     <div class="aspect-[3/4] overflow-hidden bg-gray-200 mb-8 rounded-sm">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop" alt="Divik" class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
+                        <img src="Images/divik01.webp" alt="Divik" class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
                     </div>
-                    <h4 class="text-2xl font-bold text-[#1A332B]">Divik</h4>
+                    <h4 class="text-2xl font-bold text-[#1A332B]">Divik Raghav</h4>
                     <p class="mt-4 text-[#1A332B]/60 font-light leading-relaxed italic">"Bridging the gap between digital influence and real-world brand performance."</p>
                 </div>
             </div>
